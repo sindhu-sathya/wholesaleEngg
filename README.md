@@ -54,6 +54,12 @@ This command helps in downloading all maven dependencies which are library files
  - com.igreen.ex.repository: This contains two repo files for two tables.<br />
  - IgreenService: This is a service class. This also has basic validations post db data fetch.<br />
 
+## Additional Source comments
+
+- Usually If the project is Big and there are many services involved, It is good to have a Service Interface class and and Service IMPL (implementation class).
+- Have a seperate class file for all constants and declare them as public static. Put this in common package so that it is easily understood and also accessible to other class files.
+- In this project, I have avoided them because, there only two service methods and no repeated constants.
+
 ## Running the tests
 
 For all files, Mockitos are used for code coverage. <br />
